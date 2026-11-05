@@ -1,3 +1,26 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><title>Purchase Late Receipt Worklist</title></head>
-<body><h1>Purchase Late Receipt Worklist</h1><p>Review open warehouse receipt quantities on confirmed purchase orders and schedule a standard follow-up activity.</p><p>Includes local-day late and due-soon status, vendor and buyer filters, linked purchase orders and receipts, and a bounded scan.</p><p>See README.md for scope and setup.</p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Late Receipt Worklist for Odoo 19</title>
+</head>
+<body>
+  <section class="container">
+    <h1>Late Receipt Worklist</h1>
+    <p class="lead">Find confirmed purchase lines with open warehouse receipts that are late or due soon.</p>
+    <p>Free, open-source Odoo 19 addon (LGPL-3). Requires the standard <code>purchase_stock</code> module.</p>
+    <h2>What it does</h2>
+    <ul>
+      <li>Scan confirmed warehouse purchase lines for physical products, with a limit of 2,000 candidates and 500 results.</li>
+      <li>See the expected day, vendor, buyer, received and remaining quantities, and late or due-soon status.</li>
+      <li>Open the purchase order and linked receipts, or start a standard Odoo follow-up activity for the order.</li>
+      <li>Use English and Polish screens, guides, tests and demo data; the scan does not change purchase or stock records.</li>
+    </ul>
+    <h2>See it in Odoo</h2>
+    <p>Open Purchase → Orders → Late Receipts, choose a horizon, and scan open receipts.</p>
+    <img class="img-fluid" src="main_screenshot.png" width="1440" height="900" alt="Purchase Late Receipt Worklist in Odoo 19 showing nine open lines, expected days and remaining quantities">
+    <h2>Compatibility and scope</h2>
+    <p>Tested on Odoo 19 Community, including installation from the public ZIP. Results are scan snapshots; refresh after an order or receipt changes. Services and direct dropships are outside scope. Enterprise compatibility, large-catalog performance, buyer-role browser flow and interactive site accessibility remain unverified.</p>
+  </section>
+</body>
+</html>
